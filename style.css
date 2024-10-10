@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, cyan, purple);
+}
+
+#calculator {
+    font-family: Arial, sans-serif;
+    background-color: #414142;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: #606061;
+    color: white;
+}
+
+#keys { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+#number {
+    background-color: black;
+    color: white;
+}
+
+#number:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+#number:active {
+    background-color: white;
+}
+
+#operator {
+    background-color: #ff8800;
+}
+
+#operator:hover {
+    background-color: #fbbb72;
+}
+
+#operator:active {
+    background-color: white;
+}
+
+#clear {
+    background-color: #ff1500;
+}
+
+#clear:hover {
+    background-color: #fb6f63;
+}
+
+#clear:active {
+    background-color: white;
+}
+
+#misc {
+    background-color: #232323;
+}
+
+#misc:hover {
+    background-color: #323232;
+}
+
+#misc:active {
+    background-color: white;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover{
+    background-color: #acacad;
+    transition: 0.25s;
+}
+
+button:active {
+    background-color: #c7c8c9;
+    transition: 0.1s;
+}
